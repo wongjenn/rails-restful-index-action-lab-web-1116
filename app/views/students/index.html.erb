@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Student Index</h1>
+    <% @students.all.each do |student| %>
+    <li><%= student.last_name %>, <%= student.first_name %> </li>
+    <%end%>
+
+  </body>
+</html>
